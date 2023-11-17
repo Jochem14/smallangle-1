@@ -18,6 +18,10 @@ def cmd_group():
     show_default = True,
 )
 def sin(number):
+    """Makes a sine function from a lineair list of x-values from 0 to 2pi.
+        
+        Args: number (int) amount of numbers in between x = 0 and 2pi """
+    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -32,6 +36,9 @@ def sin(number):
     show_default = True,
 )
 def tan(number):
+    """ Makes a tan function from a lineair list of x-values from 0 to 2pi.
+        
+        Args: number (int) amount of numbers in between x = 0 and 2pi"""
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
